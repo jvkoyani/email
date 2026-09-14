@@ -1,0 +1,36 @@
+{
+  "scraper": {
+    "type": "beautifulsoup",
+    "comments": "Options: 'beautifulsoup' or 'selenium'. BeautifulSoup is faster, Selenium handles JavaScript better."
+  },
+  "search": {
+    "categories": [],
+    "comments_categories": "Leave empty [] to scrape all categories, or specify: ['Restaurants', 'Cafes', 'Medical']",
+    "locations": [],
+    "comments_locations": "Leave empty [] to scrape all locations, or specify: ['Sydney', 'Melbourne', 'Brisbane']"
+  },
+  "output": {
+    "csv_filename": "localsearch_businesses.csv",
+    "json_filename": "localsearch_businesses.json",
+    "save_both_formats": true
+  },
+  "scraping": {
+    "max_pages_per_search": 100,
+    "comments_max_pages": "Maximum number of pages to scrape per category-location combination",
+    "delay_between_requests": 1,
+    "comments_delay": "Seconds to wait between requests (be respectful to server)",
+    "delay_between_searches": 2,
+    "comments_delay_searches": "Seconds to wait between different searches",
+    "timeout_seconds": 10,
+    "retries": 3
+  },
+  "selenium": {
+    "headless": true,
+    "wait_timeout": 20,
+    "comments_wait": "Seconds to wait for elements to load"
+  },
+  "logging": {
+    "level": "INFO",
+    "comments_level": "Options: DEBUG, INFO, WARNING, ERROR, CRITICAL"
+  }
+}
